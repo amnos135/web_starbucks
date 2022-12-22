@@ -9,15 +9,141 @@
 
 header{
     width: 100%;
-    height: 200px;
-    background-color: blueviolet;
+    height: 150px;
+    background-color: #F6F5EF;
+    position: fixed;
 }
 
+.max-1200{
+    max-width: 1200px;
+    height: 100%;
+   /*  background-color: lightcoral; */
+    margin: 0 auto;
+}
+
+/* --------------------------로고 시작----------------------------- */
+#logo{
+    width: 100px;
+    height: 100%;
+    /* background-color: blue; */
+    text-align: center;
+    float: left;
+}
+
+#logo > a > img{
+    display: block;
+    width: 80px;
+    position: relative;
+    margin-top: 50px;
+}
+
+h1{
+    display: none;
+}
+
+/* --------------------------로고 끝----------------------------- */
+
+/* --------------------------글로벌 메뉴 시작----------------------------- */
+
+#global-menu{
+    /* width: 100%; */
+    height: 50%;
+   /*  background-color: yellow; */
+    position: relative;
+}
+
+#global-menu > ul{
+    display: flex;
+    justify-content: flex-end;
+    /* gap: 10px; */
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+#global-menu > ul > li{
+    padding: 5px 20px;
+    border-right: 1px solid black;
+    text-transform: capitalize;
+}
+
+#global-menu > ul > li:last-child{
+    border-right: none
+}
+
+#global-menu > ul > li > a:hover{
+    border-bottom: 1px solid black;
+}
+
+/* --------------------------글로벌 메뉴 끝----------------------------- */
+
+/* --------------------------GNB 메뉴 시작----------------------------- */
+nav#gnb {
+    height: 50%;
+    /* background-color: brown; */
+ 
+}
+
+nav#gnb > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+nav#gnb > ul > li {
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    line-height: 75px;
+}
+
+nav#gnb > ul > li:hover {
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+nav#gnb > ul > li:hover > a{
+    color: #1C6F43;
+    border-bottom: 1px solid #1C6F43;
+}
+/* --------------------------GNB 메뉴 끝----------------------------- */
 main{
     width: 100%;
-    height: 600px;
+    height: 1600px;
     background-color: aqua;
 }
+
+#banner{
+    width: 100%;
+    height: 32vw;
+    background-image: url(../img/2022_Chrisma2_BG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* --------------------------좌측 플로팅 광고 배너 시작----------------------------- */
+
+#float_img{
+    width: 1200px;
+    height: 250px;
+    position: fixed;
+    /* background-color: blueviolet; */
+    margin: 0 auto;
+    top: 184px;
+    left: 0;
+    right: 0;
+}
+
+#float_img > a > img{
+    position: absolute;
+    right: 0px;
+    z-index: 999999;
+}
+
+/* --------------------------좌측 플로팅 광고 배너 끝----------------------------- */
 
 footer{
     width: 100%;

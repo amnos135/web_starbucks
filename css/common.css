@@ -16,13 +16,12 @@
     border: 0;
     outline: 0;
     font-family: 'SUIT-Regular','HBIOS-SYS', "Noto Sans KR", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     letter-spacing: -1px;
     line-height: normal;
     font-stretch: normal;
-    box-sizing: border-box;
-    cursor: none;  
+    box-sizing: border-box; 
     overflow-x: hidden;
 }
 
@@ -32,6 +31,8 @@ ol,
 ul,
 li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -53,4 +54,17 @@ a {
 
 .none {
     display: none;
+}
+
+
+
+/* 세부스타일 주기 */
+
+
+.pd-t-150{ /* 헤더 fixed 때문에 배너 밀림 */
+    padding-top: 150px;
+}
+
+.pd-lr-10{ /* 헤더 max1200에서 패딩으로 좌우 여유 주기 */
+    padding: 0 10px;
 }
