@@ -9,7 +9,6 @@
 
 header{
     width: 100%;
-    height: 150px;
     background-color: #F6F5EF;
     position: fixed;
 }
@@ -17,7 +16,7 @@ header{
 .max-1200{
     max-width: 1200px;
     height: 100%;
-   /*  background-color: lightcoral; */
+    background-color: lightcoral; 
     margin: 0 auto;
 }
 
@@ -47,7 +46,7 @@ h1{
 
 #global-menu{
     /* width: 100%; */
-    height: 50%;
+    height: 40px;
    /*  background-color: yellow; */
     position: relative;
 }
@@ -78,8 +77,9 @@ h1{
 
 /* --------------------------GNB 메뉴 시작----------------------------- */
 nav#gnb {
-    height: 50%;
+   /*  height: 50%; */
     /* background-color: brown; */
+ 
  
 }
 
@@ -109,12 +109,25 @@ nav#gnb > ul > li:hover > a{
     color: #1C6F43;
     border-bottom: 1px solid #1C6F43;
 }
+
+nav#gnb > ul > li > ul {
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+    position: absolute;
+    z-index: 999;
+}
+
+
+
 /* --------------------------GNB 메뉴 끝----------------------------- */
 main{
     width: 100%;
     height: 1600px;
-    background-color: aqua;
+    background-color: yellowgreen;
 }
+
+/* --------------------------메인 배너 시작----------------------------- */
 
 #banner{
     width: 100%;
@@ -123,6 +136,44 @@ main{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+#banner .pc-btn-look{
+    width: 143px;
+    height: 46px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: #1C6F43;
+    margin-top: 36px;
+}
+
+#banner .half-l{
+    width: 35vw;
+    background-color: blue;
+    text-align: center;
+    margin: auto;
+
+}
+
+.inner{
+    width: 100%;
+    height: 100%;
+}
+
+
+#banner .half-r{
+    width: 65vw;
+    background-color: aquamarine;
+}
+
+#banner img{
+    width: 23vw;
+}
+
+.banner-flex{
+    display: flex;
+}
+/* --------------------------메인 배너 끝----------------------------- */
+
 
 /* --------------------------좌측 플로팅 광고 배너 시작----------------------------- */
 
@@ -135,6 +186,7 @@ main{
     top: 184px;
     left: 0;
     right: 0;
+    display: none;
 }
 
 #float_img > a > img{

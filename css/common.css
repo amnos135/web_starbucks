@@ -16,7 +16,7 @@
     border: 0;
     outline: 0;
     font-family: 'SUIT-Regular','HBIOS-SYS', "Noto Sans KR", sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: -1px;
     line-height: normal;
@@ -60,9 +60,10 @@ a {
 
 /* 세부스타일 주기 */
 
+ 
 
-.pd-t-150{ /* 헤더 fixed 때문에 배너 밀림 */
-    padding-top: 150px;
+.pd-t-130{ /* 헤더 fixed 때문에 배너 밀림 */
+    padding-top: 130px;
 }
 
 .pd-lr-10{ /* 헤더 max1200에서 패딩으로 좌우 여유 주기 */
