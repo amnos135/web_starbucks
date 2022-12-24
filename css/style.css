@@ -9,6 +9,7 @@
 
 header{
     width: 100%;
+    height: 150px;
     background-color: #F6F5EF;
     position: fixed;
 }
@@ -137,6 +138,13 @@ main{
     background-size: contain;
 }
 
+.max-1600{
+    max-width: 83.3vw;
+    height: 100%;
+    background-color: lightcoral;
+    margin: 0 auto;
+}
+
 #banner .pc-btn-look{
     width: 143px;
     height: 46px;
@@ -151,7 +159,6 @@ main{
     background-color: blue;
     text-align: center;
     margin: auto;
-
 }
 
 .inner{
@@ -165,8 +172,9 @@ main{
     background-color: aquamarine;
 }
 
-#banner img{
-    width: 23vw;
+#banner img.txt-l{
+    display: block;
+    margin: 0 auto;
 }
 
 .banner-flex{
