@@ -12,13 +12,15 @@ header {
     height: 130px;
     background-color: #F6F5EF;
     position: fixed;
+    z-index: 9999;
 }
 
 .max-1200 {
     max-width: 1200px;
     height: 100%;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     margin: 0 auto;
+    position: relative;
 }
 
 /* --------------------------로고 시작----------------------------- */
@@ -30,11 +32,17 @@ header {
     float: left;
 }
 
-#logo>a>img {
+#logo > a >  img {
     display: block;
-    width: 80px;
-    position: relative;
-    margin-top: 50px;
+width: 80px;
+position: relative;
+margin-top: 45px;
+margin: 0 10px 10px 10px;
+margin: 0px 10px 0px 10px;
+margin: 0 auto;
+  margin-top: 0px;
+margin-bottom: 10px;
+margin-top: 40px;
 }
 
 h1 {
@@ -50,9 +58,11 @@ h1 {
     height: 40px;
     /*  background-color: yellow; */
     position: relative;
+    top: 10px;
+    right: 25px;
 }
 
-#global-menu>ul {
+#global-menu > ul {
     display: flex;
     justify-content: flex-end;
     /* gap: 10px; */
@@ -61,17 +71,17 @@ h1 {
     bottom: 0px;
 }
 
-#global-menu>ul>li {
+#global-menu > ul > li {
     padding: 5px 20px;
     border-right: 1px solid black;
     text-transform: capitalize;
 }
 
-#global-menu>ul>li:last-child {
+#global-menu > ul > li:last-child {
     border-right: none
 }
 
-#global-menu>ul>li>a:hover {
+#global-menu > ul > li > a:hover {
     border-bottom: 1px solid black;
 }
 
@@ -79,13 +89,15 @@ h1 {
 
 /* --------------------------GNB 메뉴 시작----------------------------- */
 nav#gnb {
-    /*  height: 50%; */
-    /* background-color: brown; */
-
-
+    width: 90%;
+    height: 70px;
+/*     background-color: brown;
+ */    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
-nav#gnb>ul {
+nav#gnb > ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -93,33 +105,43 @@ nav#gnb>ul {
     justify-content: flex-end;
 }
 
-nav#gnb>ul>li {
+nav#gnb > ul > li {
     width: 100%;
     height: 100%;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
-    line-height: 75px;
+    line-height: 70px;
 }
 
-nav#gnb>ul>li:hover {
-    background-color: lightseagreen;
-    cursor: pointer;
+nav#gnb > ul > li:hover {
+/*     background-color: lightseagreen;
+ */    cursor: pointer;
+ background-color: #111111;
 }
 
-nav#gnb>ul>li:hover>a {
+nav#gnb > ul > li:hover > a {
     color: #1C6F43;
     border-bottom: 1px solid #1C6F43;
 }
 
-nav#gnb>ul>li>ul {
+nav#gnb > ul > li > ul { /* 아래와 겹침 */
     width: 100%;
     height: 500px;
-    background-color: aqua;
-    position: absolute;
-    z-index: 999;
+/*     background-color: aqua;
+ */    position: absolute;
+    
 }
 
+nav#gnb > ul > li > ul {
+width: 100%;
+height: 275px;
+background-color: #111111;
+position: fixed;
+top: 130px;
+left: 0px;
+right: 0px;
+}
 
 
 /* --------------------------GNB 메뉴 끝----------------------------- */
@@ -200,35 +222,35 @@ main {
     position: relative;
 }
 
-.ban-img-1>img.pc-ban-img1,
-.ban-img-2>img.pc-ban-img2 {
+.ban-img-1 > img.pc-ban-img1,
+.ban-img-2 > img.pc-ban-img2 {
     max-width: 43%;
     position: absolute;
     z-index: 2;
 }
 
-.ban-img-3>img.pc-ban-img3,
-.ban-img-4>img.pc-ban-img4 {
+.ban-img-3 > img.pc-ban-img3,
+.ban-img-4 > img.pc-ban-img4 {
     max-width: 35%;
     position: absolute;
 }
 
-.ban-img-1>img.pc-ban-img1 {
+.ban-img-1 > img.pc-ban-img1 {
     bottom: 12%;
     left: 17%;
 }
 
-.ban-img-2>img.pc-ban-img2 {
+.ban-img-2 > img.pc-ban-img2 {
     bottom: 12%;
     right: 17%;
 }
 
-.ban-img-3>img.pc-ban-img3 {
+.ban-img-3 > img.pc-ban-img3 {
     top: 12%;
     left: 18%;
 }
 
-.ban-img-4>img.pc-ban-img4 {
+.ban-img-4 > img.pc-ban-img4 {
     top: 17%;
     right: 0%;
 }
@@ -250,11 +272,11 @@ main {
     /* display: none; */
 }
 
-#float_img>a>img {
+#float_img > a > img {
     width: 150px;
     position: absolute;
     right: 10px;
-    z-index: 999999;
+    z-index: 999;
 }
 
 /* --------------------------좌측 플로팅 광고 배너 끝----------------------------- */
