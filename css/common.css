@@ -69,3 +69,8 @@ a {
 .pd-lr-10{ /* 헤더 max1200에서 패딩으로 좌우 여유 주기 */
     padding: 0 10px;
 }
+
+
+.cursor-p{ /* button 들에 hover할 때 */
+    cursor: pointer;
+}
