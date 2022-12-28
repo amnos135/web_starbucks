@@ -18,9 +18,8 @@ header {
 .max-1200 {
     max-width: 1200px;
     height: 100%;
-    /* background-color: lightcoral; */
+    background-color: lightcoral;
     margin: 0 auto;
-    position: relative;
 }
 
 /* --------------------------로고 시작----------------------------- */
@@ -32,17 +31,17 @@ header {
     float: left;
 }
 
-#logo > a >  img {
+#logo>a>img {
     display: block;
-width: 80px;
-position: relative;
-margin-top: 45px;
-margin: 0 10px 10px 10px;
-margin: 0px 10px 0px 10px;
-margin: 0 auto;
-  margin-top: 0px;
-margin-bottom: 10px;
-margin-top: 40px;
+    width: 80px;
+    position: relative;
+    margin-top: 45px;
+    margin: 0 10px 10px 10px;
+    margin: 0px 10px 0px 10px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 h1 {
@@ -62,7 +61,7 @@ h1 {
     right: 25px;
 }
 
-#global-menu > ul {
+#global-menu>ul {
     display: flex;
     justify-content: flex-end;
     /* gap: 10px; */
@@ -71,17 +70,17 @@ h1 {
     bottom: 0px;
 }
 
-#global-menu > ul > li {
+#global-menu>ul>li {
     padding: 5px 20px;
     border-right: 1px solid black;
     text-transform: capitalize;
 }
 
-#global-menu > ul > li:last-child {
+#global-menu>ul>li:last-child {
     border-right: none
 }
 
-#global-menu > ul > li > a:hover {
+#global-menu>ul>li>a:hover {
     border-bottom: 1px solid black;
 }
 
@@ -91,13 +90,14 @@ h1 {
 nav#gnb {
     width: 90%;
     height: 70px;
-/*     background-color: brown;
- */    position: absolute;
+    /*     background-color: brown;
+ */
+    position: absolute;
     right: 0px;
     bottom: 0px;
 }
 
-nav#gnb > ul {
+nav#gnb>ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -105,7 +105,7 @@ nav#gnb > ul {
     justify-content: flex-end;
 }
 
-nav#gnb > ul > li {
+nav#gnb>ul>li {
     width: 100%;
     height: 100%;
     text-transform: uppercase;
@@ -114,33 +114,39 @@ nav#gnb > ul > li {
     line-height: 70px;
 }
 
-nav#gnb > ul > li:hover {
-/*     background-color: lightseagreen;
- */    cursor: pointer;
- background-color: #111111;
+nav#gnb>ul>li:hover {
+    /*     background-color: lightseagreen;
+ */
+    cursor: pointer;
+    background-color: #111111;
 }
 
-nav#gnb > ul > li:hover > a {
+nav#gnb>ul>li:hover>a {
     color: #1C6F43;
     border-bottom: 1px solid #1C6F43;
 }
 
-nav#gnb > ul > li > ul { /* 아래와 겹침 */
+nav#gnb>ul>li>ul {
+    /* 아래와 겹침 */
     width: 100%;
     height: 500px;
-/*     background-color: aqua;
- */    position: absolute;
-    
+    /*     background-color: aqua;
+ */
+    position: absolute;
+
 }
 
-nav#gnb > ul > li > ul {
-width: 100%;
-height: 275px;
-background-color: #111111;
-position: fixed;
-top: 130px;
-left: 0px;
-right: 0px;
+nav#gnb>ul>li>ul {
+    width: 100%;
+    height: 275px;
+    background-color: #111111;
+    position: fixed;
+    top: 130px;
+    left: 0px;
+    right: 0px;
+
+
+    display: none;
 }
 
 
@@ -155,7 +161,7 @@ main {
 
 #banner {
     width: 100%;
-    height: 32vw;
+    height: 33.8vw;
     background: url(../img/2022_Chrisma2_BG.png) center no-repeat;
     background-size: cover;
 }
@@ -180,7 +186,7 @@ main {
     background-color: aliceblue;
 }
 
-#banner .half-l {
+#banner .b-half-l {
     width: 35vw;
     /* background-color: blue; */
     text-align: center;
@@ -193,7 +199,7 @@ main {
 }
 
 
-#banner .half-r {
+#banner .b-half-r {
     width: 65vw;
     /* background-color: aquamarine; */
 }
@@ -218,63 +224,77 @@ main {
 }
 
 
-#banner .half-r {
+#banner .b-half-r {
     position: relative;
 }
 
-.ban-img-1 > img.pc-ban-img1,
-.ban-img-2 > img.pc-ban-img2 {
-    max-width: 43%;
+.ban-img-1>img.pc-ban-img1,
+.ban-img-2>img.pc-ban-img2 {
+    width: 43%;
     position: absolute;
     z-index: 2;
 }
 
-.ban-img-3 > img.pc-ban-img3,
-.ban-img-4 > img.pc-ban-img4 {
-    max-width: 35%;
+.ban-img-3>img.pc-ban-img3,
+.ban-img-4>img.pc-ban-img4 {
+    width: 35%;
     position: absolute;
 }
 
-.ban-img-1 > img.pc-ban-img1 {
+.ban-img-1>img.pc-ban-img1 {
     bottom: 12%;
-    left: 17%;
+    left: 10%;
 }
 
-.ban-img-2 > img.pc-ban-img2 {
+.ban-img-2>img.pc-ban-img2 {
+    width: 35.3%;
     bottom: 12%;
-    right: 17%;
+    right: 14%;
 }
 
-.ban-img-3 > img.pc-ban-img3 {
+.ban-img-3>img.pc-ban-img3 {
     top: 12%;
-    left: 18%;
+    left: 12%;
 }
 
-.ban-img-4 > img.pc-ban-img4 {
+.ban-img-4>img.pc-ban-img4 {
     top: 17%;
     right: 0%;
 }
 
 /* --------------------------메인 배너 끝----------------------------- */
 
+/* --------------------------노티스 라인 시작----------------------------- */
+
+.notice_line {
+    width: 100%;
+    height: 50px;
+    background-color: #111111;
+}
+
+/* --------------------------노티스 라인 끝----------------------------- */
+
+
+
 
 /* --------------------------좌측 플로팅 광고 배너 시작----------------------------- */
 
 #float_img {
-    max-width: 1800px;
-    height: 250px;
+/* max-width: 1800px; */
+    width: max-content;
     position: fixed;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     margin: 0 auto;
     top: 184px;
-    left: 0;
-    right: 0;
+    /* left: 0; */
+    right: 50px;
     /* display: none; */
 }
 
-#float_img > a > img {
-    width: 150px;
-    position: absolute;
+#float_img>a>img {
+    width: 8vw;
+    height: 100%;
+    /* position: absolute; */
     right: 10px;
     z-index: 999;
 }
