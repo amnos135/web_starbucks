@@ -58,6 +58,14 @@ a {
 
 
 
+.ellipsis { /* 말줄임 적용 */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+
 /* 세부스타일 주기 */
 
  
