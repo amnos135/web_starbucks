@@ -36,6 +36,16 @@ $(function(){
    
 
 
+
+
+//노티스라인 배너 숨기기 토글
+  $('.list2, .notice_banner').click(function() {
+    $('.notice_banner').toggleClass('toggled');
+});
+//노티스라인 배너 숨기기 토글
+
+
+
 });
 
 
