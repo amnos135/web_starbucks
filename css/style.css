@@ -280,7 +280,7 @@ main {
 /* --------------------------좌측 플로팅 광고 배너 시작----------------------------- */
 
 #float_img {
-/* max-width: 1800px; */
+    /* max-width: 1800px; */
     width: max-content;
     position: fixed;
     background-color: blueviolet;
@@ -307,14 +307,14 @@ footer {
     background-color: #111111;
 }
 
-.f_menu{
+.f_menu {
     width: 100%;
     height: auto;
     margin: 0 auto;
     background-color: #1C6F43;
 }
 
-.f_menu > ul{
+.f_menu>ul {
     width: 20%;
     float: left;
     background-color: #111111;
@@ -322,11 +322,11 @@ footer {
 
 
 
-.f_menu_title{
+.f_menu_title {
     text-transform: uppercase;
 }
 
-.footer_logo{
+.footer_logo {
     width: 11px;
     height: 100px;
     background: url(../img/footer_logo.png) no-repeat;
@@ -348,23 +348,27 @@ footer {
 
 
 
-section #main_cont1{
+section #main_cont1 {
     max-width: 100%;
     /* min-width: 1200px; */
     height: 50px;
     margin: 0 auto;
 }
-section #main_cont1 #cont1_list{
+
+section #main_cont1 #cont1_list {
     width: 100%;
     margin: 0 auto;
     clear: both;
 }
-section #main_cont1 #cont1_list .list1{
+
+section #main_cont1 #cont1_list .list1 {
     width: 50%;
     float: left;
     background-color: blue;
 }
-section #main_cont1 #cont1_list .list1 h3, .list2 h3{
+
+section #main_cont1 #cont1_list .list1 h3,
+.list2 h3 {
     float: left;
     line-height: 50px;
     font-weight: 700;
@@ -372,28 +376,32 @@ section #main_cont1 #cont1_list .list1 h3, .list2 h3{
     color: #000;
     font-size: 19px;
 }
-section #main_cont1 #cont1_list .list1 ul{
-    width:79%;
+
+section #main_cont1 #cont1_list .list1 ul {
+    width: 79%;
     height: 50px;
     position: relative;
     overflow: hidden;
     float: left;
 }
-section #main_cont1 #cont1_list .list1 ul li{
+
+section #main_cont1 #cont1_list .list1 ul li {
     position: absolute;
     width: 100%;
     height: 50px;
     top: 100%;
 }
-section #main_cont1 #cont1_list .list1 a.plus{
+
+section #main_cont1 #cont1_list .list1 a.plus {
     float: right;
     display: block;
     position: relative;
     top: 14px;
     right: 10px;
 }
- 
-section #main_cont1 #cont1_list .list1 a.data, .list2 a.data{
+
+section #main_cont1 #cont1_list .list1 a.data,
+.list2 a.data {
     line-height: 50px;
     color: #828282;
     font-weight: 400;
@@ -404,12 +412,14 @@ section #main_cont1 #cont1_list .list1 a.data, .list2 a.data{
 
 
 /* 리스트2 */
-section #main_cont1 #cont1_list .list1{
+section #main_cont1 #cont1_list .list1 {
     width: 50%;
     float: left;
     background-color: white;
 }
-section #main_cont1 #cont1_list .list1 h3, .list2 h3{
+
+section #main_cont1 #cont1_list .list1 h3,
+.list2 h3 {
     float: left;
     line-height: 50px;
     font-weight: 700;
@@ -417,27 +427,31 @@ section #main_cont1 #cont1_list .list1 h3, .list2 h3{
     color: #000;
     font-size: 19px;
 }
-section #main_cont1 #cont1_list .list2 ul{
+
+section #main_cont1 #cont1_list .list2 ul {
     width: 79%;
-height: 50px;
-position: relative;
-overflow: hidden;
-float: left;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    float: left;
 }
-section #main_cont1 #cont1_list .list2 ul li{
+
+section #main_cont1 #cont1_list .list2 ul li {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 50px;
 }
-section #main_cont1 #cont1_list .list2 a.plus{
+
+section #main_cont1 #cont1_list .list2 a.plus {
     float: right;
     display: block;
     position: relative;
     top: 14px;
     right: 10px;
 }
- 
-section #main_cont1 #cont1_list .list1 a.data, .list2 a.data{
+
+section #main_cont1 #cont1_list .list1 a.data,
+.list2 a.data {
     line-height: 50px;
     width: 100%;
     color: #828282;
@@ -447,21 +461,39 @@ section #main_cont1 #cont1_list .list1 a.data, .list2 a.data{
 }
 
 /* 노티스_배너 */
-.notice_banner{
+.notice_banner {
     width: 100%;
     height: 0px;
     background-color: aquamarine;
-/*아래는 토글용*/
-    overflow: hidden; 
+    /*아래는 토글용*/
+    overflow: hidden;
     -webkit-transition: height .3s linear, padding-top .3s linear;
 }
+
 .toggled {
-  height: 200px;
+    height: 200px;
 }
 
 /* 노티스_리워드 rewards */
-.notice_rewards{
+.notice_rewards {
     width: 100%;
-    height: 200px;
+    height: 250px;
+    padding: 20px 0px;
     background-color: #1C6F43;
 }
+
+.rewards_logo {
+    background: url(../img/starbucks_rewards.png) center no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+.rewards_1,
+.rewards_2 {
+    width: calc(100% - 200px);
+    height: 50%;
+    background-color: #828282;
+}
+/* 노티스_리워드 rewards */
