@@ -497,4 +497,10 @@ section #main_cont1 #cont1_list .list1 a.data,
     background-color: #828282;
 }
 
+.rewards_top1, .rewards_top2{
+    width: 100%;
+    height: 50%;
+    background-color: #111111;
+}
+
 /* 노티스_리워드 rewards */
