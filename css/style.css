@@ -414,6 +414,7 @@ section #main_cont1 #cont1_list .list1 a.data,
 /* 리스트2 */
 section #main_cont1 #cont1_list .list1 {
     width: 50%;
+    height: 100%;
     float: left;
     background-color: white;
 }
