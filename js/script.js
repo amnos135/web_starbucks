@@ -46,6 +46,30 @@ $(function(){
 
 
 
+
+//메인메뉴 드롭다운
+/*  $("nav#gnb>ul>li").hover(function() {
+    $(this)
+      .find("ul")
+      .stop()
+      .fadeToggle(300);
+  });   */
+
+
+ $('nav#gnb>ul>li').hover(function() {
+    $('nav#gnb>ul>li>ul').slideToggle();
+  }); 
+
+
+/*   $(" nav#gnb>ul>li").hover(function () {
+	$(" nav#gnb>ul>li>ul").toggleClass('show');
+}) 안됨 */
+
+
+//메인메뉴 드롭다운
+ 
+
+
 });
 
 
