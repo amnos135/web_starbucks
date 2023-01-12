@@ -57,7 +57,10 @@ $(function(){
 
 
  $('nav#gnb>ul>li').hover(function() {
-    $('nav#gnb>ul>li>ul').slideToggle();
+    $('nav#gnb>ul>li>ul').slideDown(300);
+  }); 
+  $('nav#gnb>ul>li').mouseleave(function() {
+    $('nav#gnb>ul>li>ul').slideUp(50);
   }); 
 
 
