@@ -39,9 +39,9 @@ $(function(){
 
 
 //노티스라인 배너 숨기기 토글
-  $('.list2, .notice_banner').click(function() {
+/*   $('.list2, .notice_banner').click(function() {
     $('.notice_banner').toggleClass('toggled');
-});
+}); */
 //노티스라인 배너 숨기기 토글
 
 
@@ -56,8 +56,8 @@ $(function(){
   });   */
 
 
- $('nav#gnb>ul>li').hover(function() {
-    $('nav#gnb>ul>li>ul').slideDown(300);
+ $('nav#gnb>ul>li').mouseenter(function() {
+    $('nav#gnb>ul>li>ul').slideDown(500);
   }); 
   $('nav#gnb>ul>li').mouseleave(function() {
     $('nav#gnb>ul>li>ul').slideUp(50);
