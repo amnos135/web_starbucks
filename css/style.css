@@ -314,6 +314,12 @@ footer {
     background-color: #1C6F43;
 }
 
+.f_menu::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .f_menu>ul {
     width: 20%;
     float: left;
