@@ -1,5 +1,3 @@
-
-
 $(function(){
   //노티스 라인 슬라이드, 위로
   var current1 = 0;
@@ -34,27 +32,16 @@ $(function(){
 
   //노티스라인 슬라이드, 위에서 아래로
    
-
-
-
-
 //노티스라인 배너 숨기기 토글
-/*   $('.list2, .notice_banner').click(function() {
+  $('.list2, .notice_banner').click(function() {
     $('.notice_banner').toggleClass('toggled');
-}); */
-//노티스라인 배너 숨기기 토글
+}); 
+//노티스라인 배너 숨기기 토글 끝
 
 
 
-
+ 
 //메인메뉴 드롭다운
-/*  $("nav#gnb>ul>li").hover(function() {
-    $(this)
-      .find("ul")
-      .stop()
-      .fadeToggle(300);
-  });   */
-
 
  $('nav#gnb>ul>li').mouseenter(function() {
     $('nav#gnb>ul>li>ul').slideDown(500);
@@ -63,13 +50,19 @@ $(function(){
     $('nav#gnb>ul>li>ul').slideUp(50);
   }); 
 
+  /*  $("nav#gnb>ul>li").hover(function() {
+    $(this)
+      .find("ul")
+      .stop()
+      .fadeToggle(300);
+  });   */
 
 /*   $(" nav#gnb>ul>li").hover(function () {
 	$(" nav#gnb>ul>li>ul").toggleClass('show');
 }) 안됨 */
 
 
-//메인메뉴 드롭다운
+//메인메뉴 드롭다운 끝
  
 
 
