@@ -507,11 +507,17 @@ section #main_cont1 #cont1_list .list1 a.data,
 
 .rewards_bot1, 
 .rewards_bot2{
-    width: 80px;
+    width: 100px;
     height: 30px;
     position: absolute;
     right: 0px;
     bottom: 0px;
+}
+
+.rewards_bot1 > button{
+    width: 45%;
+    height: 100%;
+ 
 }
 
 /* 노티스_리워드 rewards */
