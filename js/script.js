@@ -43,11 +43,18 @@ $(function(){
  
 //메인메뉴 드롭다운
 
- $('nav#gnb>ul>li').mouseenter(function() {
+/*  $('nav#gnb>ul>li').mouseenter(function() {
     $('nav#gnb>ul>li>ul').slideDown(500);
   }); 
   $('nav#gnb>ul>li').mouseleave(function() {
     $('nav#gnb>ul>li>ul').slideUp(50);
+  });오류남 */
+
+  $('nav#gnb>ul>li').mouseenter(function() {
+    $(this).find('ul').slideDown(500);
+  }); 
+  $('nav#gnb>ul>li').mouseleave(function() {
+    $(this).find('ul').slideUp(50);
   }); 
 
   /*  $("nav#gnb>ul>li").hover(function() {
