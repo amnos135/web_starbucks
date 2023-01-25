@@ -16,7 +16,7 @@ $(function(){
           var next1 = subtext.eq(current1);
           move1(next1, '100%',0);
           
-      },1500);
+      },1700);
   }
   set();
 
