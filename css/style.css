@@ -153,7 +153,7 @@ nav#gnb>ul>li>ul {
 /* --------------------------GNB 메뉴 끝----------------------------- */
 main {
     width: 100%;
-    height: 5000px;
+    height: 100%;
     background-color: yellowgreen;
 }
 
@@ -527,7 +527,7 @@ section #main_cont1 #cont1_list .list1 a.data,
 .promotion_1{
     width: 100%;
     height: 400px;
-    background: url(../img/2022_Chrisma2_BG.png) center no-repeat;
+    background: url(../img/2023_newyear_promotion_bg.jpg) center no-repeat;
     background-size: cover;
 }
 /* 프로모션1 끝*/
@@ -545,15 +545,23 @@ section #main_cont1 #cont1_list .list1 a.data,
 
 .bg_grey{
     width: 100%;
-    height: 400px;
-    background-color: grey;
+    height: 600px;
+    /* background-color: grey; */
+     overflow: hidden; 
 }
 .promotion_3{
-    width: 80%;
-    height: inherit;
+    min-width: 1200px;
+    height: 100%;
     margin: 0 auto;
     background: url(../img/2022_Chrismas2_PTF_bg.png) center no-repeat;
-    background-size: cover;
+    background-size: auto 100vw;
     background-attachment: fixed;
 }
 /* 프로모션3 끝*/
+.promotion_4{
+    width: 100%;
+    height: 400px;
+    background: url(../img/reserve_bg_pc.png) center no-repeat;
+    background-color: #dedede;
+    background-size: contain;
+}
